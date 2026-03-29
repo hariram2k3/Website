@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Founder Dashboard | Executive Portal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-background": "#191c1e",
+              "inverse-on-surface": "#eff1f4",
+              "on-tertiary-container": "#8999aa",
+              "surface-tint": "#4c56af",
+              "on-primary-container": "#8690ee",
+              "secondary-fixed": "#8df5e4",
+              "primary-fixed-dim": "#bdc2ff",
+              "error": "#ba1a1a",
+              "primary-fixed": "#e0e0ff",
+              "primary": "#000666",
+              "surface-bright": "#f7f9fc",
+              "tertiary": "#0c1c29",
+              "tertiary-fixed": "#d4e4f6",
+              "on-surface-variant": "#454652",
+              "primary-container": "#1a237e",
+              "outline-variant": "#c6c5d4",
+              "background": "#f7f9fc",
+              "secondary-container": "#8df5e4",
+              "on-tertiary": "#ffffff",
+              "outline": "#767683",
+              "on-secondary-fixed-variant": "#005048",
+              "on-primary-fixed-variant": "#343d96",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed": "#000767",
+              "on-surface": "#191c1e",
+              "inverse-primary": "#bdc2ff",
+              "surface-container": "#eceef1",
+              "on-primary": "#ffffff",
+              "tertiary-container": "#22313f",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-secondary-container": "#007165",
+              "on-secondary-fixed": "#00201c",
+              "surface-dim": "#d8dadd",
+              "surface": "#f7f9fc",
+              "on-error": "#ffffff",
+              "surface-variant": "#e0e3e6",
+              "secondary-fixed-dim": "#70d8c8",
+              "on-tertiary-fixed-variant": "#394857",
+              "surface-container-low": "#f2f4f7",
+              "secondary": "#006b5f",
+              "inverse-surface": "#2d3133",
+              "surface-container-high": "#e6e8eb",
+              "error-container": "#ffdad6",
+              "tertiary-fixed-dim": "#b8c8da",
+              "surface-container-highest": "#e0e3e6",
+              "on-tertiary-fixed": "#0d1d2a"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .founder-gradient {
+            background: linear-gradient(135deg, #000666 0%, #1a237e 100%);
+        }
+        .zephyr-stripe div:nth-child(even) {
+            background-color: #f2f4f7;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 z-50 w-full bg-white dark:bg-slate-900 flex justify-between items-center px-6 py-3">
+<div class="flex items-center gap-8">
+<span class="font-manrope font-black text-xl text-[#1A237E] dark:text-white tracking-tighter">Executive Portal</span>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-[#1A237E] dark:text-[#00897B] font-bold border-b-2 border-[#1A237E] font-manrope font-bold tracking-tight text-lg uppercase transition-colors" href="#">Directives</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#1A237E] dark:hover:text-[#00897B] font-manrope font-bold tracking-tight text-lg uppercase transition-colors" href="#">Analytics</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#1A237E] dark:hover:text-[#00897B] font-manrope font-bold tracking-tight text-lg uppercase transition-colors" href="#">Resources</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-slate-500 hover:text-primary transition-transform active:opacity-80 scale-95">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-slate-500 hover:text-primary transition-transform active:opacity-80 scale-95">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-slate-200 overflow-hidden">
+<img alt="User profile" data-alt="professional portrait of a high-level executive in a sharp navy suit with clean office background lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFpm5wkvhZ2m4_gnEIZinumpIR_30fjMQMq76NKGqmGy9YzDEFivnHrrUpIod7z7EqEUqQUet2hAmWBYnLq-TBAUVXtytkifSxCWiKFI1XIBRwci5n24N1DnPLM90mGDPCae6orn7FnkLRJJoFB9DNM-Waka2jro3AJyT70Z0qY_GA06-ttraZAxZx686ltLmz3a8vAUhmADZ7OmMuoMAUUyica90vZqOTXBWX8EgS3hlbJgVoOkzER6LFy0L4ZwqlDkCefnCcT70"/>
+</div>
+</div>
+</header>
+<div class="flex min-h-screen pt-[60px]">
+<!-- SideNavBar Shell -->
+<aside class="fixed left-0 h-screen w-72 bg-[#F7F9FC] dark:bg-[#0C1C29] flex flex-col py-8 gap-2 shadow-[20px_0px_40px_rgba(25,28,30,0.03)] z-40">
+<div class="px-8 mb-8">
+<h2 class="font-manrope font-extrabold text-[#1A237E] text-xl">Founder Portal</h2>
+<p class="text-slate-500 text-xs font-inter font-semibold tracking-wide">Strategic Oversight</p>
+</div>
+<nav class="flex-1">
+<!-- Active Tab: Command Center -->
+<div class="bg-white dark:bg-slate-800 text-[#1A237E] dark:text-[#00897B] rounded-l-full ml-4 pl-4 shadow-sm py-3 flex items-center gap-3 cursor-pointer transition-all duration-200">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-inter text-sm font-semibold tracking-wide">Command Center</span>
+</div>
+<div class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 mx-4 px-4 py-3 rounded-lg flex items-center gap-3 cursor-pointer hover:translate-x-1 transition-all duration-200 active:scale-98">
+<span class="material-symbols-outlined">lock</span>
+<span class="font-inter text-sm font-semibold tracking-wide">Vault</span>
+</div>
+<div class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 mx-4 px-4 py-3 rounded-lg flex items-center gap-3 cursor-pointer hover:translate-x-1 transition-all duration-200 active:scale-98">
+<span class="material-symbols-outlined">event_available</span>
+<span class="font-inter text-sm font-semibold tracking-wide">Attendance</span>
+</div>
+<div class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 mx-4 px-4 py-3 rounded-lg flex items-center gap-3 cursor-pointer hover:translate-x-1 transition-all duration-200 active:scale-98">
+<span class="material-symbols-outlined">assignment_ind</span>
+<span class="font-inter text-sm font-semibold tracking-wide">My Tasks</span>
+</div>
+<div class="text-slate-500 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 mx-4 px-4 py-3 rounded-lg flex items-center gap-3 cursor-pointer hover:translate-x-1 transition-all duration-200 active:scale-98">
+<span class="material-symbols-outlined">forum</span>
+<span class="font-inter text-sm font-semibold tracking-wide">Team Chat</span>
+</div>
+</nav>
+<div class="px-8 mt-auto flex flex-col gap-4">
+<button class="founder-gradient text-white py-3 rounded-lg font-bold shadow-lg hover:shadow-primary/20 transition-all active:scale-95">
+                    New Directive
+                </button>
+<div class="flex flex-col gap-2 pt-4 border-t border-slate-200 dark:border-slate-800">
+<div class="text-slate-500 hover:text-primary flex items-center gap-3 text-sm font-semibold cursor-pointer">
+<span class="material-symbols-outlined">help</span>
+<span>Support</span>
+</div>
+<div class="text-slate-500 hover:text-error flex items-center gap-3 text-sm font-semibold cursor-pointer">
+<span class="material-symbols-outlined">logout</span>
+<span>Log Out</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="ml-72 flex-1 p-8 bg-background">
+<!-- Hero Header -->
+<div class="flex justify-between items-end mb-10">
+<div class="max-w-2xl">
+<h1 class="font-headline text-5xl font-extrabold text-tertiary tracking-tighter mb-2 uppercase">Company Oversight</h1>
+<p class="text-on-surface-variant font-body text-lg max-w-lg">Monitoring institutional health across global operations. Your authority is requested for 3 pending directives.</p>
+</div>
+<div class="flex gap-4">
+<button class="bg-surface-container-high text-on-surface py-3 px-6 rounded-lg font-semibold flex items-center gap-2 hover:bg-surface-dim transition-colors">
+<span class="material-symbols-outlined">description</span>
+                        View Attendance Reports
+                    </button>
+<button class="founder-gradient text-white py-3 px-8 rounded-lg font-bold shadow-lg flex items-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">cloud_upload</span>
+                        Secure Upload
+                    </button>
+</div>
+</div>
+<!-- Bento Grid Stats -->
+<div class="grid grid-cols-12 gap-8 mb-12">
+<!-- Large Health Stat -->
+<div class="col-span-12 lg:col-span-8 bg-surface-container-lowest p-8 rounded shadow-sm flex flex-col justify-between border-l-4 border-primary">
+<div class="flex justify-between items-start">
+<div>
+<span class="text-xs font-bold uppercase tracking-widest text-primary-container/60 mb-1 block">Institutional Health</span>
+<h3 class="font-headline text-3xl font-bold text-tertiary">Operational Excellence</h3>
+</div>
+<div class="text-right">
+<span class="text-4xl font-black text-primary">98.4%</span>
+<span class="block text-xs font-bold text-secondary uppercase">+2.1% Monthly Growth</span>
+</div>
+</div>
+<div class="mt-8 h-32 w-full flex items-end gap-1">
+<!-- Mock Chart bars -->
+<div class="flex-1 bg-surface-container h-1/2 rounded-t"></div>
+<div class="flex-1 bg-surface-container h-2/3 rounded-t"></div>
+<div class="flex-1 bg-primary-container h-3/4 rounded-t"></div>
+<div class="flex-1 bg-surface-container h-1/2 rounded-t"></div>
+<div class="flex-1 bg-primary h-full rounded-t"></div>
+<div class="flex-1 bg-surface-container h-2/3 rounded-t"></div>
+<div class="flex-1 bg-primary-container h-4/5 rounded-t"></div>
+<div class="flex-1 bg-secondary h-5/6 rounded-t"></div>
+</div>
+</div>
+<!-- Vertical Quick Stats -->
+<div class="col-span-12 lg:col-span-4 flex flex-col gap-8">
+<div class="bg-tertiary text-white p-6 rounded flex items-center justify-between">
+<div>
+<span class="text-xs font-semibold uppercase opacity-60">Total Employees</span>
+<div class="text-3xl font-bold">1,284</div>
+</div>
+<div class="bg-white/10 p-3 rounded-full">
+<span class="material-symbols-outlined">groups</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded shadow-sm flex items-center justify-between border-l-4 border-secondary">
+<div>
+<span class="text-xs font-semibold uppercase text-on-surface-variant">Active Tasks</span>
+<div class="text-3xl font-bold text-tertiary">422</div>
+</div>
+<div class="bg-secondary-container p-3 rounded-full text-on-secondary-container">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-8">
+<!-- Recent Activity Feed -->
+<div class="col-span-12 lg:col-span-7 bg-surface-container-low rounded-xl overflow-hidden">
+<div class="p-6 bg-surface-container-highest flex justify-between items-center">
+<h3 class="font-headline font-bold text-lg uppercase tracking-tight text-tertiary">Recent Activity Feed</h3>
+<span class="material-symbols-outlined text-outline">history</span>
+</div>
+<div class="zephyr-stripe">
+<div class="p-6 flex gap-4">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm">upload_file</span>
+</div>
+<div class="absolute top-10 left-1/2 w-[2px] h-full bg-outline-variant/30 -translate-x-1/2"></div>
+</div>
+<div>
+<h4 class="font-bold text-sm text-tertiary">Annual Fiscal Audit Uploaded</h4>
+<p class="text-xs text-on-surface-variant mt-1">Financial Department • 12 minutes ago</p>
+<div class="mt-2 text-xs py-1 px-3 bg-white inline-block rounded-full border border-outline-variant/20">audit_report_2024.pdf</div>
+</div>
+</div>
+<div class="p-6 flex gap-4">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm">person_add</span>
+</div>
+<div class="absolute top-10 left-1/2 w-[2px] h-full bg-outline-variant/30 -translate-x-1/2"></div>
+</div>
+<div>
+<h4 class="font-bold text-sm text-tertiary">New Regional Director Onboarded</h4>
+<p class="text-xs text-on-surface-variant mt-1">HR Operations • 2 hours ago</p>
+<p class="text-xs italic text-on-surface-variant mt-1">"System credentials provisioned for London HQ."</p>
+</div>
+</div>
+<div class="p-6 flex gap-4">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-tertiary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm">security</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-sm text-tertiary">Vault Access: Security Protocol Alpha</h4>
+<p class="text-xs text-on-surface-variant mt-1">System Architecture • 5 hours ago</p>
+<div class="mt-2 flex gap-2">
+<span class="text-[10px] font-bold px-2 py-0.5 rounded bg-error-container text-on-error-container">CRITICAL</span>
+<span class="text-[10px] font-bold px-2 py-0.5 rounded bg-surface-variant text-on-surface-variant">LOGGED</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Strategic Summary / Document Activity -->
+<div class="col-span-12 lg:col-span-5 flex flex-col gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/20">
+<div class="flex justify-between items-center mb-6">
+<h3 class="font-headline font-bold text-lg text-tertiary">Recent Documents</h3>
+<button class="text-primary font-bold text-xs uppercase tracking-widest hover:underline">View All</button>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center group-hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-primary">description</span>
+</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-tertiary">Strategic_Expansion_Q4.key</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Modified 4h ago by Board</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary">more_vert</span>
+</div>
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center group-hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-primary">analytics</span>
+</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-tertiary">Global_Tax_Compliance_V2.xlsx</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Modified 1d ago by Finance</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary">more_vert</span>
+</div>
+</div>
+</div>
+<div class="relative h-full min-h-[200px] rounded-xl overflow-hidden">
+<img alt="Corporate Headquarters" class="absolute inset-0 w-full h-full object-cover grayscale brightness-50" data-alt="ultra-modern glass skyscraper facade reflecting a dramatic sunset sky with deep blues and burnt oranges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjx0goruEw-6llafmwO-dZQXq-u5z1CFdT6az5FzRQ-MOUGxsy2ZAcuD-Aolgz0bsaovV6du_4bW-XgdiMYYh1X6r2Pv0u6aJe_iNC2N45DzES8r8BGKdJk0fi-u3HxH-fCcRRkKfQFLR3IORXONuiaK87CM4f5CzsJVzxB1GfVFsGeKIL7OGDp3ecdJHpAoez8m_Cn2l3ABZu8WXdprZHy34rx_yFlqzE1mZjJOg5tCkbDLI4cXA3ja6CQ04gvgesqzdLAHTcyJo"/>
+<div class="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<span class="text-xs font-bold text-white/70 uppercase tracking-widest mb-1">Global Presence</span>
+<h4 class="text-2xl font-black text-white leading-tight">Expansion Project:<br/>Munich Innovation Hub</h4>
+<div class="mt-4 flex items-center gap-2">
+<div class="h-1 flex-1 bg-white/20 rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container w-3/4"></div>
+</div>
+<span class="text-xs font-bold text-white">75%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
